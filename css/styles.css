@@ -1,0 +1,30 @@
+@media (max-width: 480px){
+    #hero{
+        display: flex;
+        flex-direction: row;
+        .hero-text{
+            width: 50%;
+            margin-top: 20px;
+            flex-direction: column;
+            font-size: small;
+        }
+        h1{
+            font-size: 1.2rem;
+        }
+        p.main-text{
+            display:none;
+        }
+    }
+    img#big-img{
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px){
+
+}
+
+@media (min-width: 1025px){
+
+}
