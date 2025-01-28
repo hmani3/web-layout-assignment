@@ -1,26 +1,46 @@
 @media (max-width: 480px){
-    #hero{
+    #hero-container{
         display: flex;
-        flex-direction: row;
-        .hero-text{
+        padding-bottom: calc(140px - 4%);
+        .inner-text {
             width: 50%;
-            margin-top: 20px;
-            flex-direction: column;
-            font-size: small;
+            margin-top: 7vmin;
+            margin-left: 0.2vw;
+            font-size: 3.5vw;
         }
         h1{
-            font-size: 1.2rem;
+            font-size: 4.8vw;
         }
         p.main-text{
             display:none;
         }
     }
-    img#big-img{
-        width: 50%;
-        padding: 10px;
+    p.link{
+        margin-top:-2vmin;
     }
-}
+    
+    .subsection-text{
+        font-size: 3vw;
+    }
+    #big-img{
+        width: 50%;
+        padding: 2.5vmin;
+    }
+    div.subsection-container{
+        display:flex;
+        justify-content: start;
+        margin-top: 4vh;
+        h1 {
+            font-size: 4vw;
+        }
+    }
+        
+    img.small-imgs{
+        transform: rotate(90deg);
+        width: 20%;
+    }
 
+}
 @media (min-width: 481px) and (max-width: 1024px){
 
 }
