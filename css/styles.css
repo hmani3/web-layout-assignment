@@ -95,7 +95,7 @@ body {
 
     .big-img {
         width: 40%;
-        padding: 2.5vmin;
+        margin: 2.5vmin;
     }
 
     .container-container {
@@ -123,13 +123,13 @@ body {
         }
     }
 
-    @media (min-width: 619px) and (max-width: 718px) {
+    @media (min-width: 619px) and (max-width: 708px) {
         .column {
             gap: 40px;
         }
     }
 
-    @media (min-width: 719px) and (max-width: 875px) {
+    @media (min-width: 711px) and (max-width: 845px) {
         .column {
             gap: 85px;
         }
@@ -179,7 +179,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 30%;
+        width: 27%;
         height: 100%;
         box-sizing: border-box;
         padding: 10px;
@@ -209,7 +209,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 65%;
+        width: 69%;
         height: 100%;
         box-sizing: border-box;
         padding: 10px;
@@ -234,10 +234,11 @@ body {
         padding: 12px;
 
         h1 {
-            font-size: 1.5vw;
+            font-size: 1.3vw;
         }
 
         .link {
+            margin-top:-8px;
             font-size: 1vw;
         }
     }
@@ -253,8 +254,8 @@ body {
 @media (max-width: 480px) { /*higher contrast colours for mobile*/
     :root{
         --primary: #1A73E8;
-        --secondary: #34A853;
-        --accent: #FBBC05;
+        --secondary: #c5ecd0;
+        --accent: #879169;
         --neutral1: #FFFFFF;
         --neutral2: #F1F3F4;
         --neutral3: #202124;
@@ -273,13 +274,24 @@ body {
 
 @media (min-width: 481px){
     :root{
-        --background: #F1F3F4;
-
-        --header: #1A73E8;
-
-        --text: #202124;
-
-        --button: #34A853;
+        --background: #c8ecfe;
+        --link: #1A73E8;
+        --text: #334586;
+        --border: #5a8b91;
         /* #FBBC05 */
     }
+    body {
+        background: var(--background);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    a, a:visited {
+        color: var(--link);
+    }
+    img {
+        border: 5px solid var(--border);
+    }
+    p {
+        color: var(--text);
+    }
+
 }
